@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <template id="index">
+            <t t-call="website.layout">
+                <t t-set="title">Academy</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <t t-foreach="teachers" t-as="teacher">
+                            <p><t t-esc="teacher.id"/> <t t-esc="teacher.name"/></p>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+            <!-- <center>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25372.65842419461!2d-98.20265640801288!3d19.03433523677721!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1502220237163" width="600" height="450" frameborder="0" style="border:0"></iframe>
+            </center> -->
+
+        <!-- <template id="listing"> -->
+        <!--   <ul> -->
+        <!--     <li t-foreach="objects" t-as="object"> -->
+        <!--       <a t-attf-href="#{ root }/objects/#{ object.id }"> -->
+        <!--         <t t-esc="object.display_name"/> -->
+        <!--       </a> -->
+        <!--     </li> -->
+        <!--   </ul> -->
+        <!-- </template> -->
+
+        <!-- <template id="object"> -->
+        <!--   <h1><t t-esc="object.display_name"/></h1> -->
+        <!--   <dl> -->
+        <!--     <t t-foreach="object._fields" t-as="field"> -->
+        <!--       <dt><t t-esc="field"/></dt> -->
+        <!--       <dd><t t-esc="object[field]"/></dd> -->
+        <!--     </t> -->
+        <!--   </dl> -->
+        <!-- </template> -->
+
+    </data>
+</odoo>
